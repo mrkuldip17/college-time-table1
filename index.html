@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BCA 5-A 303 Student Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="header">
+
+<h1>🎓 BCA Semester 5</h1>
+
+<h2>Class 5-A 303</h2>
+
+<div id="clock"></div>
+
+<div id="today"></div>
+
+</div>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>📚 Current Class</h3>
+<p id="currentClass">Loading...</p>
+</div>
+
+<div class="card">
+<h3>⏳ Next Class</h3>
+<p id="nextClass">Loading...</p>
+</div>
+
+<div class="card">
+<h3>⌚ Time Remaining</h3>
+<p id="countdown">Loading...</p>
+</div>
+
+</div>
+
+<div class="tabs">
+
+<button onclick="showDay('monday')">Monday</button>
+
+<button onclick="showDay('tuesday')">Tuesday</button>
+
+<button onclick="showDay('wednesday')">Wednesday</button>
+
+<button onclick="showDay('thursday')">Thursday</button>
+
+<button onclick="showDay('friday')">Friday</button>
+
+</div>
+
+<div id="monday" class="day">
+<h2>📅 Monday</h2>
+
+<div class="subject">08:00 - 09:00 | ERP (KS)</div>
+<div class="subject">09:00 - 10:00 | ST (ND)</div>
+<div class="subject">10:00 - 11:00 | NGD LAB</div>
+<div class="subject">12:00 - 01:00 | ERP (KS)</div>
+<div class="subject">01:00 - 02:00 | JAVA (ND)</div>
+
+</div>
+
+<div id="tuesday" class="day">
+<h2>📅 Tuesday</h2>
+
+<div class="subject">08:00 - 09:00 | CYS (JDP)</div>
+<div class="subject">09:00 - 10:00 | ERP (KS)</div>
+<div class="subject">10:00 - 11:00 | JAVA LAB</div>
+<div class="subject">11:00 - 12:00 | ERP (KS)</div>
+
+</div>
+
+<div id="wednesday" class="day">
+<h2>📅 Wednesday</h2>
+
+<div class="subject">08:00 - 09:00 | NGD (DP)</div>
+<div class="subject">09:00 - 10:00 | ERP (KS)</div>
+<div class="subject">10:00 - 11:00 | NGD (DP)</div>
+
+</div>
+
+<div id="thursday" class="day">
+<h2>📅 Thursday</h2>
+
+<div class="subject">08:00 - 09:00 | NGD LAB</div>
+<div class="subject">09:00 - 10:00 | JAVA (SM)</div>
+<div class="subject">10:00 - 11:00 | ERP (KS)</div>
+
+</div>
+
+<div id="friday" class="day">
+<h2>📅 Friday</h2>
+
+<div class="subject">08:00 - 09:00 | CYS (JDP)</div>
+<div class="subject">09:00 - 10:00 | ST (ND)</div>
+<div class="subject">10:00 - 11:00 | JAVA LAB</div>
+
+</div>
+
+<div class="attendance">
+
+<h2>✅ Attendance Tracker</h2>
+
+<div class="att-card">
+
+<h3>Present</h3>
+
+<p id="present">0</p>
+
+<button onclick="addPresent()">+</button>
+
+</div>
+
+<div class="att-card">
+
+<h3>Absent</h3>
+
+<p id="absent">0</p>
+
+<button onclick="addAbsent()">+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
